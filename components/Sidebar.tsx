@@ -59,8 +59,8 @@ export default function Sidebar() {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <div>
-                <h1 className="text-xl font-bold text-gray-800 dark:text-white">Feelings Tracker</h1>
-                <p className="text-xs text-gray-500 dark:text-gray-400">Well-being App</p>
+                <h1 className="text-xl font-bold text-gray-800 dark:text-white">気持ちトラッカー</h1>
+                <p className="text-xs text-gray-500 dark:text-gray-400">ウェルビーイングアプリ</p>
               </div>
             </div>
             {/* Close button for mobile */}
