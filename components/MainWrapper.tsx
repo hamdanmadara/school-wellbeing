@@ -8,7 +8,7 @@ export default function MainWrapper({ children }: { children: React.ReactNode })
   return (
     <main
       className={`flex-1 min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300 ease-in-out ${
-        !isMobile && isOpen ? 'md:ml-72' : 'ml-0'
+        !isMobile && isOpen ? 'md:ml-60' : 'ml-0'
       }`}
     >
       {children}

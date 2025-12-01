@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Heart, BarChart3, Users, Home, Menu, X, ChevronLeft } from 'lucide-react';
+import { Smile, Heart, GraduationCap, Home, Menu, X, ChevronLeft } from 'lucide-react';
 import { useSidebar } from './SidebarContext';
 
 const navItems = [
-  { href: '/children-input', label: 'こども用', icon: Heart, color: 'from-pink-500 to-rose-500' },
-  { href: '/children-dashboard', label: 'こころの様子', icon: BarChart3, color: 'from-blue-500 to-cyan-500' },
-  { href: '/teacher-dashboard', label: '教員用', icon: Users, color: 'from-purple-500 to-indigo-500' },
+  { href: '/children-input', label: 'こども用', icon: Smile, color: 'from-emerald-500 to-teal-500' },
+  { href: '/children-dashboard', label: 'こころの様子', icon: Heart, color: 'from-emerald-500 to-teal-500' },
+  { href: '/teacher-dashboard', label: '教員用', icon: GraduationCap, color: 'from-emerald-500 to-teal-500' },
   { href: '/parent-dashboard', label: '保護者用', icon: Home, color: 'from-emerald-500 to-teal-500' },
 ];
 
@@ -33,7 +33,7 @@ export default function Sidebar() {
       <button
         onClick={toggleSidebar}
         className={`hidden md:flex fixed top-5 z-50 items-center justify-center w-10 h-10 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 dark:border-gray-700 ${
-          isOpen ? 'left-[240px]' : 'left-5'
+          isOpen ? 'left-[224px]' : 'left-5'
         }`}
         aria-label="Toggle sidebar"
       >
@@ -50,7 +50,7 @@ export default function Sidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`w-72 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-r border-gray-200 dark:border-gray-700 min-h-screen p-6 fixed left-0 top-0 z-40 transition-all duration-300 ease-in-out shadow-2xl ${
+        className={`w-60 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-r border-gray-200 dark:border-gray-700 min-h-screen p-5 fixed left-0 top-0 z-40 transition-all duration-300 ease-in-out shadow-2xl ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -113,13 +113,13 @@ export default function Sidebar() {
         </nav>
 
         {/* Footer */}
-        <div className="absolute bottom-6 left-6 right-6">
+        {/* <div className="absolute bottom-6 left-6 right-6">
           <div className="p-4 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl border border-teal-100 dark:border-teal-800">
             <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
               © 2024 Well-being System
             </p>
           </div>
-        </div>
+        </div> */}
       </aside>
     </>
   );

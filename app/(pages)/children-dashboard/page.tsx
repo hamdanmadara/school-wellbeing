@@ -70,13 +70,6 @@ export default function ChildrenDashboardPage() {
             </div>
           </div>
         </div>
-
-        {/* Bottom Navigation */}
-        <div className="flex justify-center mt-8">
-          <div className="w-12 h-12 bg-white dark:bg-gray-800 rounded-lg flex items-center justify-center">
-            <div className="w-8 h-8 border-2 border-gray-400 dark:border-gray-600 rounded"></div>
-          </div>
-        </div>
       </div>
     </div>
   );
