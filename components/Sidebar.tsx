@@ -58,11 +58,8 @@ export default function Sidebar() {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg">
-                <Heart className="w-6 h-6 text-white" fill="white" />
-              </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800 dark:text-white">こころの健康</h1>
+                <h1 className="text-xl font-bold text-gray-800 dark:text-white">Feelings Tracker</h1>
                 <p className="text-xs text-gray-500 dark:text-gray-400">Well-being App</p>
               </div>
             </div>

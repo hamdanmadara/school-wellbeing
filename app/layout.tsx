@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "こころの健康 - Well-being App",
-  description: "Children's Mental Health & Well-being Monitoring System",
+  title: "Feelings Tracker - Well-being App",
+  description: "Children's Emotional Well-being & Feelings Tracking System",
 };
 
 export default function RootLayout({
