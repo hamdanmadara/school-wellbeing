@@ -19,13 +19,17 @@ export default function RadarChart({ data }: RadarChartProps) {
   ];
 
   return (
-    <div className="w-full h-64">
+    <div className="w-full h-80">
       <ResponsiveContainer width="100%" height="100%">
-        <RechartsRadarChart data={chartData}>
+        <RechartsRadarChart 
+          data={chartData}
+          margin={{ top: 20, right: 30, bottom: 20, left: 30 }}
+        >
           <PolarGrid stroke="#E5E7EB" />
           <PolarAngleAxis 
             dataKey="power" 
             tick={{ fill: '#6B7280', fontSize: 12 }}
+            tickFormatter={(value) => value}
           />
           <PolarRadiusAxis 
             angle={90} 

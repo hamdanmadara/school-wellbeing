@@ -3,7 +3,6 @@
 import LineChart from '@/components/charts/LineChart';
 import RadarChart from '@/components/charts/RadarChart';
 import { currentStudentData } from '@/lib/mockData';
-import { User } from 'lucide-react';
 
 export default function ChildrenDashboardPage() {
   return (
@@ -51,20 +50,31 @@ export default function ChildrenDashboardPage() {
                 </p>
               </div>
 
-              {/* AI Advice */}
-              <div className="bg-white dark:bg-gray-700 rounded-xl p-4 border-2 border-gray-200 dark:border-gray-600">
-                <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-                  AIキャラクターがセルフケアにつながる助言やスキルに誘導
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center">
-                    <User className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+              {/* AI Advice with Character */}
+              <div className="mt-8 flex items-center justify-end gap-3">
+                {/* Speech Bubble on the left of character */}
+                <div className="relative bg-white dark:bg-gray-700 rounded-[2rem] p-5 border-2 border-black dark:border-gray-300 shadow-lg">
+                  <p className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed font-medium">
+                    AIキャラクターが<br />
+                    セルフケアにつながる<br />
+                    助言やスキルに誘導
+                  </p>
+                  {/* Speech bubble tail pointing right to character */}
+                  <div className="absolute right-[-14px] top-1/2 -translate-y-1/2">
+                    {/* Outer border tail */}
+                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[14px] border-l-black dark:border-l-gray-300"></div>
+                    {/* Inner fill tail */}
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[12px] border-l-white dark:border-l-gray-700"></div>
                   </div>
-                  <div className="flex-1">
-                    <p className="text-xs text-gray-600 dark:text-gray-400">
-                      今日は少し疲れているようですね。十分な睡眠を取って、リラックスする時間を作りましょう。
-                    </p>
-                  </div>
+                </div>
+
+                {/* Character Image on the right, moved down */}
+                <div className="flex-shrink-0 self-end">
+                  <img
+                    src="/images/character-1.png"
+                    alt="AI Character"
+                    className="w-40 h-auto object-contain"
+                  />
                 </div>
               </div>
             </div>
